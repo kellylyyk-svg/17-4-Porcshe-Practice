@@ -50,17 +50,24 @@ header .more:hover::after {transform: rotate(135deg);}
 
 
 
-.section2 {display: flex; height: 599px;}
-.section2 .left {width: 50%; background: url(../images/section2_left.png); padding: 113px 0;}
-.section2 .left .textbox {width: 560px;}
-.section2 .left .textbox ul {}
-.section2 .left .textbox ul li {}
-.section2 .left .textbox ul li strong {color: #fff;}
-.section2 .left .textbox ul li p {color: #fff;}
+.section2 {display: flex; height: 599px; }
+.section2 .left {width: 50%; background: url(../images/section2_left.png); padding: 113px 0; justify-content: end; display: flex; background-size: cover;}
+.section2 .left .textbox {width: 560px; color: #fff; }
+.section2 .left .textbox ul {display: flex; flex-direction: column; gap: 96px;}
+.section2 .left .textbox ul li {position: relative;}
+.section2 .left ul li::before {content: ''; background: #fff; width: 17px; height: 1px; position: absolute; left: 0; top: 18px;}
+.section2 .left .textbox strong {padding-left: 34px; font-size: 24px;}
+.section2 .left .textbox p {margin-top: 19px; padding-left: 34px; font-size: 14px;}
 .section2 .right {width: 50%; background: url(../images/section2_right.png);}
 .section2 .right .textbox {width: 560px;}
 
-.section3 {}
+.section3 {padding: 113px 0;}
+.section3 h2 {display: flex; justify-content: center; font-size: 40px; margin-bottom: 37px;}
+.section3 .content {display: flex; justify-content: space-between;}
+.section3 .content li {}
+.section3 .content li figure {margin-bottom: 20px;}
+.section3 .content li .ex {display: block; text-align: center; margin-bottom: 8px; font-weight: bold; font-size: 16px;}
+.section3 .content li p {font-size: 18px; display: block; text-align: center;}
 
 
-footer {}
+footer {background: #071215; display: flex; justify-content: center; align-items: center; padding: 90px 0;}
